@@ -1,18 +1,55 @@
-# VoltApply n8n Workflow Backups
+# VoltApply – n8n Workflow Backups
 
-This repository contains JSON exports of n8n workflows developed as part of the **VoltApply Automation System** — an AI-powered solution to streamline job applications across LinkedIn and other platforms.
+This repository contains JSON backups of all n8n workflows built during the **VoltApply job automation sprint**.
 
-### 🚀 Project Purpose
-
-VoltApply is a 14-day sprint project to automate and enhance the job application process by leveraging:
-- 🧠 AI resume parsing (via Gemini API)
-- 🔁 FastAPI and Redis for backend orchestration
-- 🤖 LinkedIn & job portal automation using Puppeteer
-- ⚙️ n8n as the central orchestrator
-
-This repository serves as a **version-controlled backup** for all n8n workflows developed throughout the sprint.
+VoltApply is a 14-day build focused on automating job applications using:
+- 🧠 AI resume parsing (Gemini API)
+- ⚙️ n8n workflow automation
+- 🔁 Redis + FastAPI backend
+- 🤖 Puppeteer-based LinkedIn automation
 
 ---
 
-### 📁 Folder Structure
+### 🔄 What's in This Repo
 
+Each workflow is saved daily as a `.json` export from n8n.
+
+📁 Folder structure:
+/day-1/
+
+setup.json
+/day-2/
+
+resume-upload.json
+/day-3/
+
+redis-integration.json
+...
+
+yaml
+Copy code
+
+---
+
+### ✅ How to Use
+
+1. Download any `.json` file
+2. Import it into your [n8n](https://n8n.io/) instance
+3. Add credentials and test
+
+---
+
+### 📅 Sprint Progress
+
+| Day | Task                          | Status  |
+|-----|-------------------------------|---------|
+| 1   | n8n setup                     | ✅ Done |
+| 2   | Resume upload + parsing       | ✅ Done |
+| 3   | Redis integration             | ✅ Done |
+| 4   | GitHub backup + automation    | 🚧 In Progress |
+
+---
+
+### 👤 Author
+
+**Nicolas Dominguez**  
